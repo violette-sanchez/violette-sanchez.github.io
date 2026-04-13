@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baggy | Portfolio Design Produit</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
+</head>
+
+<body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="flex justify-between items-center w-full lg:w-auto">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-brand">Portfolio</span> <span class="nav-logo-name">Violette Sanchez</span>
+        </a>
+        <button class="mobile-menu-btn lg:hidden" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu hidden lg:flex items-center gap-12">
+        <a href="projets.html" class="nav-menu-link active">Projets</a>
+        <a href="galerie.html" class="nav-menu-link">Galerie</a>
+        <a href="a-propos.html" class="nav-menu-link">À propos</a>
+        <a href="contact.html" class="nav-menu-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav">
+      <a href="projets.html" class="mobile-nav-link">Projets</a>
+      <a href="galerie.html" class="mobile-nav-link">Galerie</a>
+      <a href="a-propos.html" class="mobile-nav-link">À propos</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main class="pt-40 pb-40 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <a href="/projets.html" class="back-link group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="group-hover:-translate-x-1 transition-transform">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Retour aux projets
+      </a>
+
+      <!-- Section 1: Introduction (Titre, Fiche Technique, Texte, Photo) -->
+      <header class="project-header-grid project-section-wrapper">
+        <div class="reveal opacity-0 translate-y-4 transition-all duration-1000">
+          <h1 class="project-main-title">Baggy</h1>
+
+          <!-- Informations Importantes (Fiche Technique) -->
+          <div class="project-info-grid">
+            <div>
+              <p class="project-info-label">Catégorie</p>
+              <p class="project-info-value">Concours</p>
+            </div>
+            <div>
+              <p class="project-info-label">Année</p>
+              <p class="project-info-value">2026</p>
+            </div>
+            <div>
+              <p class="project-info-label">Matériaux</p>
+              <p class="project-info-value">Bio-sourcés</p>
+            </div>
+            <div>
+              <p class="project-info-label">Collaboration</p>
+              <p class="project-info-value">Clara Mugniot</p>
+            </div>
+          </div>
+
+          <p class="project-main-description font-serif italic">
+            Exploration des matériaux biosourcés et de leur application dans le mobilier contemporain.
+          </p>
+        </div>
+        <div
+          class="aspect-[4/5] bg-gray-100 overflow-hidden reveal opacity-0 translate-y-4 transition-all duration-1000">
+          <img src="images/Projet-6/P6-compost.png" alt="Baggy" class="w-full h-full object-cover"
+            referrerPolicy="no-referrer" />
+        </div>
+      </header>
+
+      <!-- Nouvelle Section : Image format frise -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title mb-12">Scénario initial</h2>
+        <div
+          class="w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[80vw] relative left-1/2 -translate-x-1/2 h-[25vh] md:h-[35vh] lg:h-[40vh] bg-gray-100 overflow-hidden">
+          <img src="images/Projet-6/scénario long.jpg" alt="Image format frise" class="w-full h-full object-cover"
+            referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Section 2: Image grand format -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title mb-12">Produit finale</h2>
+        <div
+          class="w-[90vw] md:w-[85vw] lg:w-[75vw] xl:w-[80vw] relative left-1/2 -translate-x-1/2 grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <!-- Image plus grande (gauche) -->
+          <div class="md:col-span-2 h-[45vh] md:h-[75vh] bg-gray-100 overflow-hidden">
+            <img src="images/Projet-6/P6-planche finale 2 2.jpg" class="w-full h-full object-cover"
+              referrerPolicy="no-referrer" />
+          </div>
+          <!-- Liste de caractéristiques (droite) -->
+          <div class="md:col-span-1 flex flex-col justify-center gap-3 py-8 md:py-0 px-2 lg:px-8">
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-attache.jpeg" alt="Attache"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Attache réglable s'adapte au format des poubelles
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-cordon.jpeg" alt="Cordon"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Cordon pour faciliter le transport
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-tissu-impermeable.jpeg" alt="Tissu Imperméable"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Tissu imperméable se lave facilement grâce au patron intérieur circulaire sans couture
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-anse.jpeg" alt="Anse" class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Anse pour faciliter le vidage
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-pression.jpeg" alt="Bouton Pression"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Bouton pression pour le refermer sur lui-même
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-tissu-lin.jpeg" alt="Tissu Lin"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Tissu lin respirant protège des odeurs et des déchets
+              </p>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 md:w-16 md:h-16 flex-shrink-0 flex justify-center items-center">
+                <img src="images/Projet-6/icone-espace.jpeg" alt="Espace"
+                  class="max-w-full max-h-full object-contain" />
+              </div>
+              <p class="text-sm md:text-base text-black/90 font-sans leading-snug">
+                Espace entre les tissus pour que la poubelle se referme
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Image carrée + Liste -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title mb-12">Scénario d'usage</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+          <div class="aspect-square bg-gray-100 overflow-hidden">
+            <img src="images/Projet-6/P6-scénario.jpeg" alt="Image carrée" class="w-full h-full object-cover"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="flex flex-col gap-6">
+            <h3 class="text-2xl font-serif mb-2">Les étapes d'utilisations</h3>
+            <ol class="list-decimal list-inside space-y-4 font-sans text-base text-black/80">
+              <li>L'utilisateur choisit s'il souhaite utiliser le sac seul ou le placer dans un contenant qu'il possède
+                déjà chez lui.</li>
+              <li>Ilprépare son repas du soir.</li>
+              <li>Il verse tous ses déchets alimentaires dans le sac.</li>
+              <li>Une fois le sac rempli, il le referme et l'emporte avec lui en partant au travail.</li>
+              <li>Sur le chemin, il s'arrête à une borne dédiée et vide le contenu du sac.</li>
+              <li>Il plie et referme le sac vide sur lui-même et accroche les deux pression ensembles.</li>
+              <li>Il le range dans son sac.</li>
+              <li>Il se rend au travail/courses/activitée et continue sa journée serainement.</li>
+              <li>À la fin de la journée, une fois rentré chez lui, il rince le sac et le met à la machine pour
+                le laver.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Grande image plein écran + texte -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title mb-12">CMF</h2>
+        <div class="w-full aspect-[16/9] lg:aspect-[21/9] bg-gray-100 overflow-hidden mb-6">
+          <!-- Image pour Tablette et Desktop (Affichée avec md:block) -->
+          <img src="images/Projet-6/P6-CMF.png" alt="Grande image plein écran"
+            class="hidden md:block w-full h-full object-cover" referrerPolicy="no-referrer" />
+
+          <!-- Image pour Mobile (Affichée seulement sur petit écran md:hidden) -->
+          <img src="/images/Projet-6/P6-CMF petite.jpeg" alt="Image pour mobile"
+            class="block md:hidden w-full h-full object-cover" referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Navigation Projets -->
+      <section class="project-navigation-section">
+        <div class="project-section-wrapper mb-12">
+          <h2 class="text-4xl font-serif mb-8">Plus de projets</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Projet Précédent -->
+          <a href="/projet-P5.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <img src="images/suivente/P5.png" alt="Onepace"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  Projet précédent
+                </span>
+                <h4 class="text-3xl font-serif italic">Onepace</h4>
+              </div>
+            </div>
+          </a>
+
+          <!-- Projet Suivant -->
+          <a href="/projet-P7.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <img src="images/suivente/P7.png" alt="Projet 07"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  Projet suivant
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <h4 class="text-3xl font-serif italic">Eau secours</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-grid">
+      <div class="space-y-4">
+        <div class="footer-brand"><span class="font-bold">Portfolio</span> Violette Sanchez</div>
+        <p class="footer-text">Créons ensemble des projets qui ont du sens.</p>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Contact</h4>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:violettes@nchez.fr" class="footer-link">violettes@nchez.fr</a>
+          <a href="tel:+33782542843" class="footer-link">+33 7 82 54 28 43</a>
+          <p class="footer-text">Nantes, France</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Suivre</h4>
+        <div class="flex gap-8">
+          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer"
+            class="footer-link">LinkedIn</a>
+          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Portfolio Violette — Tous droits réservés
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

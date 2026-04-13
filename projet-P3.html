@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Watch | Portfolio Design Produit</title>
+  <link rel="stylesheet" href="/src/index.css">
+  <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
+</head>
+
+<body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="flex justify-between items-center w-full lg:w-auto">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-brand">Portfolio</span> <span class="nav-logo-name">Violette Sanchez</span>
+        </a>
+        <button class="mobile-menu-btn lg:hidden" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu hidden lg:flex items-center gap-12">
+        <a href="projets.html" class="nav-menu-link active">Projets</a>
+        <a href="galerie.html" class="nav-menu-link">Galerie</a>
+        <a href="a-propos.html" class="nav-menu-link">À propos</a>
+        <a href="contact.html" class="nav-menu-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav">
+      <a href="projets.html" class="mobile-nav-link">Projets</a>
+      <a href="galerie.html" class="mobile-nav-link">Galerie</a>
+      <a href="a-propos.html" class="mobile-nav-link">À propos</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main class="pt-40 pb-40 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <a href="/projets.html" class="back-link group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="group-hover:-translate-x-1 transition-transform">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Retour aux projets
+      </a>
+      <!-- Section 1: Introduction (Titre, Fiche Technique, Texte, Photo) -->
+      <header class="project-header-grid project-section-wrapper">
+        <div class="reveal opacity-0 translate-y-4 transition-all duration-1000">
+          <h1 class="project-main-title">Würfel</h1>
+
+          <!-- Informations Importantes (Fiche Technique) -->
+          <div class="project-info-grid">
+            <div>
+              <p class="project-info-label">Catégorie</p>
+              <p class="project-info-value">Food design</p>
+            </div>
+            <div>
+              <p class="project-info-label">Année</p>
+              <p class="project-info-value">2023</p>
+            </div>
+            <div>
+              <p class="project-info-label">Matériaux</p>
+              <p class="project-info-value">Chocolat</p>
+            </div>
+            <div>
+              <p class="project-info-label">Dimensions</p>
+              <p class="project-info-value">Ø 40 mm</p>
+            </div>
+            <div>
+              <p class="project-info-label">Collaboration</p>
+              <p class="project-info-value">Basile Fruteau de Laclo, Manon Bourgueil, Louis Pontoizeau </p>
+            </div>
+          </div>
+
+          <p class="project-main-description font-serif italic">
+            Une montre qui redéfinit l'interface entre l'homme et le temps, privilégiant la sensation tactile et la
+            pureté géométrique.
+          </p>
+        </div>
+        <div
+          class="aspect-[4/5] bg-gray-100 overflow-hidden reveal opacity-0 translate-y-4 transition-all duration-1000">
+          <img src="images/Projet-3/P3-moodboard3.png" alt="Nexus Watch" class="w-full h-full object-cover"
+            referrerPolicy="no-referrer" />
+        </div>
+      </header>
+
+
+      <!-- Section 3: Le Processus -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">Le Processus</h2>
+        <div class="flex flex-col gap-12">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3_M1 2.jpg" alt="Process 1" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3_M2 2.jpg" alt="Process 2" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3_M3 2.jpg" alt="Process 3" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3_M4 2.jpg" alt="Process 4" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="project-side-text">
+            <p>
+              Le boîtier en titane grade 5 offre une légèreté exceptionnelle. Le cadran, dépourvu de chiffres, utilise
+              des jeux d'ombres pour indiquer les heures.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: La Maquette -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">La Maquette</h2>
+        <div class="flex flex-col gap-4">
+          <div class="project-image-container aspect-[4/3]">
+            <img src="images/Projet-3/P3_M5.jpg" alt="Maquette Large" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3-pack-1.jpg" alt="Maquette 2" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3-pack-2.jpg" alt="Maquette 3" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="images/Projet-3/P3-pack-3.jpg" alt="Maquette 4" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="project-side-text mt-8">
+            <p>
+              La montre finale est un exercice de sobriété. Le contraste entre le titane brossé et le cuir noir souligne
+              l'aspect intemporel du design.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nouvelle section : Très grande image -->
+      <section class="project-section-wrapper reveal">
+        <div class="w-[calc(100vw-4rem)] relative left-1/2 -ml-[calc(50vw-2rem)] aspect-[7/5] md:aspect-[16/9] bg-gray-100 overflow-hidden">
+          <img src="images/Projet-3/choco tombé copie.jpg" alt="Très grande image" class="w-full h-full object-cover"
+            referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Section 5: Détails -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">Packaging</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
+          <div class="project-image-container aspect-square">
+            <img src="images/Projet-3/P3-pack-4.jpg" alt="Detail 1" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="images/Projet-3/IMG_2978 copie 3.jpg" alt="Detail 2" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="images/Projet-3/P3-pack-5.jpg" alt="Detail 3" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="images/Projet-3/IMG_2974 copie.jpg" alt="Detail 4" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Annexes / Affiche -->
+      <section class="project-section-wrapper reveal">
+
+        <div class="mt-20 border-t border-black/5 pt-20">
+          <img src="images/Projet-3/P3-affiche .jpg" alt="Affiche Würfel" class="w-full h-auto"
+            referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Navigation Projets -->
+      <section class="project-navigation-section">
+        <div class="project-section-wrapper mb-12">
+          <h2 class="text-4xl font-serif mb-8">Plus de projets</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Projet Précédent -->
+          <a href="/projet-P2.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <img src="images/suivente/P2.png" alt="Aora"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  Projet précédent
+                </span>
+                <h4 class="text-3xl font-serif italic">Aora</h4>
+              </div>
+            </div>
+          </a>
+
+          <!-- Projet Suivant -->
+          <a href="/projet-P4.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <img src="images/suivente/P4.png" alt="Bikepack"
+              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  Projet suivant
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <h4 class="text-3xl font-serif italic">Bikepack</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-grid">
+      <div class="space-y-4">
+        <div class="footer-brand"><span class="font-bold">Portfolio</span> Violette Sanchez</div>
+        <p class="footer-text">Créons ensemble des projets qui ont du sens.</p>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Contact</h4>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:violettes@nchez.fr" class="footer-link">violettes@nchez.fr</a>
+          <a href="tel:+33782542843" class="footer-link">+33 7 82 54 28 43</a>
+          <p class="footer-text">Nantes, France</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Suivre</h4>
+        <div class="flex gap-8">
+          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer"
+            class="footer-link">LinkedIn</a>
+          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Portfolio Violette — Tous droits réservés
+    </div>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
