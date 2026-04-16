@@ -390,7 +390,7 @@
   }
 
   .project-main-description {
-    @apply text-2xl leading-relaxed text-black/80 max-w-2xl font-serif italic;
+    @apply text-2xl leading-relaxed text-black/80 max-w-2xl font-serif;
   }
 
   /* Split Layouts (Text side-by-side with images) */
