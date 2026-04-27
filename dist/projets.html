@@ -7,8 +7,30 @@
   <title>Projets | Portfolio Violette Sanchez</title>
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="/assets/icone-3-ChkU29B3.png">
-  <script type="module" crossorigin src="/assets/main-Dppny2c5.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-1O2h0mXC.css">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-CyJ5zhu6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ESEn1cnP.css">
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -57,9 +79,12 @@
       <div class="project-grid-3">
         <!-- Project 1 -->
         <a href="/projet-P1.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P1-XQKzU11l.png" alt="Lume Lamp"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P1-XQKzU11l.png" alt="Edge - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/p1-f1%202-BaL-JSaR.jpg" alt="Edge - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -80,9 +105,12 @@
         <!-- Project 2 -->
         <a href="/projet-P2.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 100ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P2-B85MTZ_z.png" alt="Terra Stool"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P2-B85MTZ_z.png" alt="Aora - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P2-F7-DPgxE5AV.png" alt="Aora - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -103,9 +131,12 @@
         <!-- Project 3 -->
         <a href="/projet-P3.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 200ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P3-ClAxbuc3.png" alt="Nexus Watch"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P3-ClAxbuc3.png" alt="Würfel - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P3-F1-BKMU6jGs.jpg" alt="Würfel - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -125,9 +156,12 @@
         </a>
         <!-- Project 4 -->
         <a href="/projet-P4.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P4-B5LtbZ_C.png" alt="Flora Vase"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P4-B5LtbZ_C.png" alt="Bikepack - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P4-F9%202-CEtpCTov.jpg" alt="Bikepack - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -148,9 +182,12 @@
         <!-- Project 5 -->
         <a href="/projet-P5.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 100ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P5-DQm-JCvN.png" alt="Project 5"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P5-DQm-JCvN.png" alt="Onepace - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P5-F4%202-DAYRyVbl.jpg" alt="Onepace - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -171,9 +208,12 @@
         <!-- Project 6 -->
         <a href="/projet-P6.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 200ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P6-w7cax9zp.png" alt="Project 6"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P6-w7cax9zp.png" alt="Baggy - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P6-M1-DyUmhhSy.jpg" alt="Baggy - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -198,9 +238,12 @@
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
         <!-- Project 7: Trousse -->
         <a href="/projet-P7.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P7-DaaMyIcn.png" alt="Trousse de secours"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P7-DaaMyIcn.png" alt="Eau secours - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P7-M4-D4Wp7n-F.jpg" alt="Eau secours - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -219,12 +262,15 @@
           </div>
         </a>
 
-        <!-- Project 8: céramique  -->
+        <!-- Project 8: céramique -->
         <a href="/projet-P8.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 100ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P8-1tEVEc4M.png" alt="Assise Cintrage"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P8-1tEVEc4M.png" alt="Lampoa - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P8-F5%202-zTFzKmRr.jpg" alt="Lampoa - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -246,9 +292,12 @@
         <!-- Project 9: Chantal -->
         <a href="/projet-P9.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 200ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P9-CDVd7_yZ.png" alt="Chantal"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P9-CDVd7_yZ.png" alt="Chantal - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P9-M3%203-CQm12RjP.jpg" alt="Chantal - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -270,9 +319,12 @@
         <!-- Project 10: Walkman -->
         <a href="/projet-P10.html" class="group block reveal opacity-0 translate-y-8 transition-all duration-1000"
           style="transition-delay: 300ms;">
-          <div class="aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
-            <img src="/assets/index-P10-BIAjAEDP.png" alt="Walkman"
-              class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <div class="relative aspect-[4/5] bg-gray-100 overflow-hidden mb-6">
+            <img src="/assets/index-P10-BIAjAEDP.png" alt="Walkman - Image principale"
+              class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <img src="/assets/P10-M8-DZZRqOer.jpg" alt="Walkman - Vue produit"
+              class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
           </div>
           <div class="flex justify-between items-start">
@@ -313,8 +365,10 @@
       <div class="space-y-4">
         <h4 class="footer-heading">Suivre</h4>
         <div class="flex gap-8">
-          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
-          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer" class="footer-link">Behance</a>
+          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer"
+            class="footer-link">LinkedIn</a>
+          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Behance</a>
         </div>
       </div>
     </div>

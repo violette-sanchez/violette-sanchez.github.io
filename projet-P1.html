@@ -8,6 +8,28 @@
   <link rel="stylesheet" href="/src/index.css">
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="images/icone-3.png">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -205,50 +227,35 @@
         <div class="project-section-wrapper mb-12">
           <h2 class="text-4xl font-serif mb-8">Plus de projets</h2>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Projet Précédent -->
-          <a href="/projet-P10.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
-            <img src="images/suivente/P10.png" alt="Projet 10"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              referrerPolicy="no-referrer" />
-            <div
-              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+        <div class="flex justify-center">
+          <div class="w-full md:w-1/2">
+            <!-- Projet Suivant -->
+            <a href="/projet-P2.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+              <!-- Image principale -->
+              <img src="images/suivente/P2.png" alt="Aora - Image principale"
+                class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+                referrerPolicy="no-referrer" />
+              <!-- Image au survol -->
+              <img src="images/Projet-2/P2-PS.png" alt="Aora - Vue produit"
+                class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+                referrerPolicy="no-referrer" />
               <div
-                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="19" y1="12" x2="5" y2="12"></line>
-                    <polyline points="12 19 5 12 12 5"></polyline>
-                  </svg>
-                  Projet précédent
-                </span>
-                <h4 class="text-3xl font-serif italic">Walkman</h4>
+                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <div
+                  class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                  <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                    Projet suivant
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </span>
+                  <h4 class="text-3xl font-serif italic">Aora</h4>
+                </div>
               </div>
-            </div>
-          </a>
-
-          <!-- Projet Suivant -->
-          <a href="/projet-P2.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
-            <img src="images/suivente/P2.png" alt="Aora"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              referrerPolicy="no-referrer" />
-            <div
-              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-              <div
-                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
-                  Projet suivant
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </span>
-                <h4 class="text-3xl font-serif italic">Aora</h4>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </section>
     </div>

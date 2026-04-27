@@ -8,6 +8,28 @@
   <link rel="stylesheet" href="/src/index.css">
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="images/icone-3.png">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -59,7 +81,7 @@
 
 
       <!-- Mini-Project 1 (Now 3) - Trousse -->
-      <section class="project-section-wrapper reveal border-t border-black/5 pt-20">
+      <section class="project-section-wrapper reveal">
         <div class="project-header-grid mb-12">
           <!-- Titre à gauche -->
           <div class="reveal opacity-0 translate-y-4 transition-all duration-1000">
@@ -80,8 +102,12 @@
               </div>
             </div>
             <p class="project-main-description font-serif text-lg">
-              Conception d'une trousse de secours résistante et compacte pour les environnements marins.
-            </p>
+              J’ai conçue cette trousse de secours pour les longues navigations en mer. Cette trousse compacte, étanche
+              et intuitive reste toujours accessible grâce à son accrochage direct au bateau. Organisée
+              en accordéon avec des pictogrammes dessinés, elle permet une lecture rapide du contenu.
+
+              Ce projet m’a permis de répondre concrètement à un besoin en intégrant contraintes techniques, usage et
+              environnement marin.
           </div>
         </div>
         <!-- Dynamic Masonry Grid 1 -->
@@ -137,8 +163,13 @@
 
           <!-- Projet Suivant -->
           <a href="/projet-P8.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
-            <img src="images/index/index-P8.png" alt="Assise Cintrage"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            <!-- Image principale -->
+            <img src="images/suivente/P8.png" alt="Assise Cintrage - Image principale"
+              class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <!-- Image au survol -->
+            <img src="images/Projet-8/P8-F4.jpg" alt="Assise Cintrage - Vue produit"
+              class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
             <div
               class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

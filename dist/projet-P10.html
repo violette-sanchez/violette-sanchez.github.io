@@ -7,8 +7,30 @@
   <title>Walkman | Portfolio Design Produit</title>
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="/assets/icone-3-ChkU29B3.png">
-  <script type="module" crossorigin src="/assets/main-Dppny2c5.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-1O2h0mXC.css">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-CyJ5zhu6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ESEn1cnP.css">
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -79,7 +101,7 @@
               </div>
             </div>
             <p class="project-main-description font-serif text-lg">
-              Dans le cadre d’un projet en groupe de quatre, nous avons conçu et réalisé une maquette d’un Walkman en
+              Dans le cadre d’un projet, nous avons conçu et réalisé une maquette d’un Walkman en
               utilisant deux matériaux principaux : le bois et la mousse.
 
               L’objectif était de reproduire avec précision les volumes et les détails du produit tout en explorant les
@@ -120,8 +142,13 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Projet Précédent -->
           <a href="/projet-P9.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
-            <img src="/assets/P9-DkzeVuSn.png" alt="Chantal"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            <!-- Image principale -->
+            <img src="/assets/P9-DkzeVuSn.png" alt="Chantal - Image principale"
+              class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <!-- Image au survol -->
+            <img src="/assets/P9-M4-CTd0Q8tt.jpeg" alt="Chantal - Vue produit"
+              class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
             <div
               class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
@@ -142,8 +169,13 @@
 
           <!-- Projet Suivant (Retour au P1 puisque P7 est le dernier) -->
           <a href="/projet-P1.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
-            <img src="/assets/P1--BE734_rp.png" alt="Edge"
-              class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            <!-- Image principale -->
+            <img src="/assets/P1--BE734_rp.png" alt="Edge - Image principale"
+              class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <!-- Image au survol -->
+            <img src="/assets/p1-f1-DbwOUCgn.jpg" alt="Edge - Vue produit"
+              class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
               referrerPolicy="no-referrer" />
             <div
               class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">

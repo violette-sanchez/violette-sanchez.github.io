@@ -5,11 +5,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Violette Sanchez | Accueil</title>
-  <!-- <link rel="stylesheet" href="/src/index.css"> -->
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="/assets/icone-3-ChkU29B3.png">
-  <script type="module" crossorigin src="/assets/main-Dppny2c5.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-1O2h0mXC.css">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-CyJ5zhu6.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ESEn1cnP.css">
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -51,7 +72,7 @@
     <section class="hero-section">
       <img src="/assets/cover-Doby3FPP.JPG" alt="Hero Design" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
       <div class="absolute inset-0 bg-black/10 flex items-end p-12 md:p-24">
-        <div class="max-w-4xl text-white reveal opacity-0 translate-y-4 transition-all duration-1000" id="hero">
+        <div class="max-w-4xl text-white" id="hero">
           <h1 class="hero-title">
             Bienvenue sur mon portfolio !
           </h1>
@@ -93,60 +114,84 @@
         <!-- Project 1 -->
         <a href="/projet-P1.html"
           class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <img src="/assets/index-P1-XQKzU11l.png" alt="Lume Lamp"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <!-- Image principale -->
+          <img src="/assets/index-P1-XQKzU11l.png" alt="Edge - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
             referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/p1-f1%202-BaL-JSaR.jpg" alt="Edge - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
           <div
-            class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center">
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
             <div
               class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-              <h3 class="project-card-title">Edge</h3>
-              <p class="project-card-meta">Robot multifonction</p>
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Edge</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Robot multifonction</p>
             </div>
           </div>
         </a>
         <!-- Project 2 -->
         <a href="/projet-P2.html"
           class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <img src="/assets/index-P2-B85MTZ_z.png" alt="Terra Stool"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <!-- Image principale -->
+          <img src="/assets/index-P2-B85MTZ_z.png" alt="Aora - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
             referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P2-F7-DPgxE5AV.png" alt="Aora - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
           <div
-            class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center">
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
             <div
               class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-              <h3 class="project-card-title">Aora</h3>
-              <p class="project-card-meta">Chaise</p>
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Aora</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Chaise</p>
             </div>
           </div>
         </a>
         <!-- Project 3 -->
         <a href="/projet-P3.html"
           class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <img src="/assets/index-P3-ClAxbuc3.png" alt="Nexus Watch"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <!-- Image principale -->
+          <img src="/assets/index-P3-ClAxbuc3.png" alt="Würfel - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
             referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P3-F1-BKMU6jGs.jpg" alt="Würfel - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
           <div
-            class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center">
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
             <div
               class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-              <h3 class="project-card-title">Würfel</h3>
-              <p class="project-card-meta">Chocolat</p>
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Würfel</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Chocolat</p>
             </div>
           </div>
         </a>
         <!-- Project 4 -->
         <a href="/projet-P4.html"
           class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
-          <img src="/assets/index-P4-B5LtbZ_C.png" alt="Flora Vase"
-            class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          <!-- Image principale -->
+          <img src="/assets/index-P4-B5LtbZ_C.png" alt="Bikepack - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
             referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P4-F9%202-CEtpCTov.jpg" alt="Bikepack - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
           <div
-            class="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center">
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
             <div
               class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
-              <h3 class="project-card-title">Bikepack</h3>
-              <p class="project-card-meta">Sacoche à vélo </p>
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Bikepack</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Sacoche à vélo</p>
             </div>
           </div>
         </a>

@@ -2,29 +2,17 @@
 import './index.css';
 
 // Animation au défilement (Reveal on scroll)
-const revealElements = () => {
+const revealElements = (threshold = 150) => {
   const reveals = document.querySelectorAll('.reveal, .section-container, .project-header-grid, .project-text-block, .project-navigation-section');
   const windowHeight = window.innerHeight;
-  const revealPoint = 150;
 
   reveals.forEach(element => {
     const revealTop = element.getBoundingClientRect().top;
-    if (revealTop < windowHeight - revealPoint) {
+    if (revealTop < windowHeight - threshold) {
       element.classList.add('opacity-100', 'translate-y-0', 'scale-100', 'translate-x-0');
       element.classList.remove('opacity-0', 'translate-y-4', 'translate-y-8', 'scale-95', 'translate-x-[-20px]');
     }
   });
-};
-
-// Animation du hero au chargement
-const animateHero = () => {
-  const hero = document.getElementById('hero');
-  if (hero) {
-    setTimeout(() => {
-      hero.classList.add('opacity-100', 'translate-y-0');
-      hero.classList.remove('opacity-0', 'translate-y-4');
-    }, 100);
-  }
 };
 
 // Back to Top Button Logic
@@ -71,10 +59,14 @@ window.addEventListener('scroll', () => {
   handleBackToTop();
 });
 
+// Révèle immédiatement les éléments déjà visibles au chargement (sans seuil)
+document.addEventListener('DOMContentLoaded', () => {
+  revealElements(0);
+});
+
 // Global load event
 window.addEventListener('load', () => {
-  animateHero();
-  revealElements();
+  revealElements(0);
   handleMobileMenu();
 
   const backToTopBtn = document.getElementById('back-to-top');

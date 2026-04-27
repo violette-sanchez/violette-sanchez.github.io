@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="/src/index.css">
   <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
   <link rel="icon" type="image/png" href="images/icone-3.png">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body { background-color: #FBFBF9; }
+    @keyframes heroFadeIn {
+      from { opacity: 0; transform: translateY(1rem); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    #hero { animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both; }
+  </style>
 </head>
 
 <body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
@@ -50,7 +59,7 @@
       <!-- ① Grande phrase d'accroche pleine largeur -->
       <div class="mb-6 reveal opacity-0 translate-y-4 transition-all duration-1000">
         <p class="font-serif text-xl leading-relaxed text-black">
-          Je recherche une alternance en design produit à partir de septembre 2026.
+          Je propose mes compétences dans le cadre d’une alternance à partir de septembre 2026.
         </p>
       </div>
 
