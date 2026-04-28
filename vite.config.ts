@@ -37,6 +37,8 @@ export default defineConfig(({ mode }) => {
           p8: path.resolve(__dirname, 'projet-P8.html'),
           p9: path.resolve(__dirname, 'projet-P9.html'),
           p10: path.resolve(__dirname, 'projet-P10.html'),
+          cv: path.resolve(__dirname, 'cv.html'),
+          recommendation: path.resolve(__dirname, 'recommendation.html'),
         },
       },
     },
