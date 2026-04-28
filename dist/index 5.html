@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Violette Sanchez | Accueil</title>
+  <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
+  <link rel="icon" type="image/png" href="/assets/icone-3-ChkU29B3.png">
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-DVokZJ17.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DmmMmQPl.css">
+</head>
+
+<body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="flex justify-between items-center w-full lg:w-auto">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-brand">Portfolio</span> <span class="nav-logo-name">Violette Sanchez</span>
+        </a>
+        <button class="mobile-menu-btn lg:hidden" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu hidden lg:flex items-center gap-12">
+        <a href="projets.html" class="nav-menu-link">Projets</a>
+        <a href="a-propos.html" class="nav-menu-link">À propos</a>
+        <a href="galerie.html" class="nav-menu-link">Galerie</a>
+        <a href="contact.html" class="nav-menu-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav">
+      <a href="projets.html" class="mobile-nav-link">Projets</a>
+      <a href="a-propos.html" class="mobile-nav-link">À propos</a>
+      <a href="galerie.html" class="mobile-nav-link">Galerie</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Hero Image Section (Full Screen) -->
+    <section class="hero-section">
+      <img src="/assets/cover-Doby3FPP.JPG" alt="Hero Design" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+      <div class="absolute inset-0 bg-black/10 flex items-end p-12 md:p-24">
+        <div class="max-w-4xl text-white" id="hero">
+          <h1 class="hero-title">
+            Bienvenue sur mon portfolio !
+          </h1>
+          <p class="hero-description">
+            <span class="hero-name-highlight"></span> Ici vous retrouverez une partie de mon
+            travail, de mon
+            univers et de mes expérimentations.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Introduction Text -->
+    <section class="section-container pt-8 pb-20">
+      <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-16 items-center">
+        <!-- Photo à gauche -->
+        <div class="aspect-[4/4] bg-gray-100 overflow-hidden max-w-xs mx-auto md:mx-0">
+          <img src="/assets/illustration%20de%20moi-BGBHR_RC.jpeg" class="w-full h-full object-cover" referrerPolicy="no-referrer" />
+        </div>
+        <!-- Texte à droite -->
+        <div class="flex flex-col gap-6">
+          <p class="section-paragraph-dark">
+            Étudiante de design produit à l'École de design Nantes Atlantique, je m'épanouis dans cette discipline
+            depuis maintenant trois ans. J'ai construit ce portfolio avec l'envie de vous faire découvrir mon travail
+            des projets réalisés majoritairement en groupe, en collaboration avec mes camarades de classe de 2024 à
+            février 2026, que je suis heureuse de partager avec vous.
+          </p>
+          <p class="section-paragraph-dark">
+            Mon objectif pour septembre 2026 est d'intégrer une entreprise en alternance, afin de poursuivre mon cursus
+            tout en me professionnalisant.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projet Section -->
+    <section class="section-container">
+      <h2 class="section-title">Projets</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <a href="/projet-P1.html"
+          class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
+          <!-- Image principale -->
+          <img src="/assets/index-P1-XQKzU11l.png" alt="Edge - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+            referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/p1-f1%202-BaL-JSaR.jpg" alt="Edge - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
+            <div
+              class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Edge</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Robot multifonction</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project 2 -->
+        <a href="/projet-P2.html"
+          class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
+          <!-- Image principale -->
+          <img src="/assets/index-P2-B85MTZ_z.png" alt="Aora - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+            referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P2-F7-DPgxE5AV.png" alt="Aora - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
+            <div
+              class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Aora</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Chaise</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project 3 -->
+        <a href="/projet-P3.html"
+          class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
+          <!-- Image principale -->
+          <img src="/assets/index-P3-ClAxbuc3.png" alt="Würfel - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+            referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P3-F1-BKMU6jGs.jpg" alt="Würfel - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
+            <div
+              class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Würfel</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Chocolat</p>
+            </div>
+          </div>
+        </a>
+        <!-- Project 4 -->
+        <a href="/projet-P4.html"
+          class="group relative block aspect-[4/5] overflow-hidden bg-gray-100 reveal opacity-0 translate-y-8 transition-all duration-1000">
+          <!-- Image principale -->
+          <img src="/assets/index-P4-B5LtbZ_C.png" alt="Bikepack - Image principale"
+            class="absolute inset-0 h-full w-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+            referrerPolicy="no-referrer" />
+          <!-- Image au survol -->
+          <img src="/assets/P4-F9%202-CEtpCTov.jpg" alt="Bikepack - Vue produit"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+            referrerPolicy="no-referrer" />
+          <!-- Overlay titre -->
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-500 group-hover:opacity-100 flex items-center justify-center z-10">
+            <div
+              class="text-center transform translate-y-4 transition-transform duration-500 group-hover:translate-y-0">
+              <h3 class="text-2xl font-serif text-white [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">Bikepack</h3>
+              <p class="text-sm uppercase tracking-widest text-white/75">Sacoche à vélo</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="flex justify-center">
+        <a href="/projets.html" class="button-primary">
+          Plus de projets
+        </a>
+      </div>
+    </section>
+
+    <!-- Universe Preview -->
+    <section class="bg-black text-white py-40 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+          <div class="aspect-square bg-white/5 overflow-hidden reveal opacity-0 scale-95 transition-all duration-1000">
+            <img src="/assets/IMG_8315-CXcFAA1w.jpg" alt="Universe" class="w-full h-full object-cover opacity-80"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div>
+            <h2 class="text-5xl font-serif mb-8 font-bold">Mon univers visuel</h2>
+            <p class="text-lg text-white/60 leading-relaxed mb-6">
+              J'aime le travail manuel : bricoler, fabriquer, tester et comprendre comment les choses prennent forme.
+              La photographie argentique nourrit aussi mon regard depuis plusieurs années ; j’aime l’attention, la
+              patience et la présence qu’elle demande.
+
+
+            </p>
+            <p class="text-lg text-white/60 leading-relaxed mb-12">
+              La cuisine occupe aussi une grande place dans mon quotidien, et ce depuis toujours. Bien manger, partager
+              un repas, prendre le temps, ce sont des choses qui comptent vraiment pour moi. La convivialité, le
+              partage et la transmission sont des valeurs qui me sont chères, et je les retrouve autant dans la cuisine
+              que dans le travail de groupe et la collaboration, qui sont au cœur de ma façon d'apprendre et de créer.
+            </p>
+            <a href="/galerie.html" class="inline-flex items-center gap-4 group">
+              <span class="text-sm uppercase tracking-widest font-medium">Explorer la galerie</span>
+              <div
+                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-grid">
+      <div class="space-y-4">
+        <div class="footer-brand"><span class="font-bold">Portfolio</span> Violette Sanchez</div>
+        <p class="footer-text">Créons ensemble des projets qui ont du sens.</p>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Contact</h4>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:violettes@nchez.fr" class="footer-link">violettes@nchez.fr</a>
+          <a href="tel:+33782542843" class="footer-link">+33 7 82 54 28 43</a>
+          <p class="footer-text">Nantes, France</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Suivre</h4>
+        <div class="flex gap-8">
+          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer"
+            class="footer-link">LinkedIn</a>
+          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Portfolio Violette — Tous droits réservés
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+</body>
+
+</html>

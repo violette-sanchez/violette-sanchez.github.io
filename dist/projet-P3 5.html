@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Würfel | Portfolio Design Produit</title>
+  <link rel="stylesheet" href="https://use.typekit.net/krt3nuv.css">
+  <link rel="icon" type="image/png" href="/assets/icone-3-ChkU29B3.png">
+
+  <!-- CSS critique : fond de page immédiat + animation hero sans JS -->
+  <style>
+    body {
+      background-color: #FBFBF9;
+    }
+
+    @keyframes heroFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #hero {
+      animation: heroFadeIn 1s cubic-bezier(0.2, 1, 0.3, 1) 0.2s both;
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/main-DVokZJ17.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-DmmMmQPl.css">
+</head>
+
+<body class="bg-[#FBFBF9] text-[#1A1A1A] font-sans antialiased">
+  <!-- Navigation -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="flex justify-between items-center w-full lg:w-auto">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-brand">Portfolio</span> <span class="nav-logo-name">Violette Sanchez</span>
+        </a>
+        <button class="mobile-menu-btn lg:hidden" id="mobile-menu-btn" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="nav-menu hidden lg:flex items-center gap-12">
+        <a href="projets.html" class="nav-menu-link active">Projets</a>
+        <a href="a-propos.html" class="nav-menu-link">À propos</a>
+        <a href="galerie.html" class="nav-menu-link">Galerie</a>
+        <a href="contact.html" class="nav-menu-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav">
+      <a href="projets.html" class="mobile-nav-link">Projets</a>
+      <a href="a-propos.html" class="mobile-nav-link">À propos</a>
+      <a href="galerie.html" class="mobile-nav-link">Galerie</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </div>
+
+  <main class="pt-40 pb-40 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      <a href="/projets.html" class="back-link group">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="group-hover:-translate-x-1 transition-transform">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Retour aux projets
+      </a>
+      <!-- Section 1: Introduction (Titre, Fiche Technique, Texte, Photo) -->
+      <header class="project-header-grid project-section-wrapper">
+        <div class="reveal opacity-0 translate-y-4 transition-all duration-1000">
+          <h1 class="project-main-title">Würfel</h1>
+
+          <!-- Informations Importantes (Fiche Technique) -->
+          <div class="project-info-grid">
+            <div>
+              <p class="project-info-label">Catégorie</p>
+              <p class="project-info-value">Food design</p>
+            </div>
+            <div>
+              <p class="project-info-label">Année</p>
+              <p class="project-info-value">2023</p>
+            </div>
+            <div>
+              <p class="project-info-label">Matériaux</p>
+              <p class="project-info-value">Chocolat & carton </p>
+            </div>
+            <div>
+              <p class="project-info-label">Dimensions</p>
+              <p class="project-info-value">100 X 20 X 120 MM</p>
+            </div>
+            <div>
+              <p class="project-info-label">Collaboration</p>
+              <p class="project-info-value">Basile Fruteau de Laclo, Manon Bourgueil, Louis Pontoizeau </p>
+            </div>
+          </div>
+
+          <p class="project-main-description font-serif">
+            Le projet part d’une exploration de Berlin, de sa culture et de ses contrastes. Comment traduire la richesse
+            historique et artistique d’un pays à travers le chocolat ?
+          </p>
+        </div>
+        <div>
+          <div
+            class="aspect-[4/5] bg-gray-100 overflow-hidden reveal opacity-0 translate-y-4 transition-all duration-1000">
+            <img src="/assets/P3-moodboard3-C9sJTT0m.png" alt="Nexus Watch" class="w-full h-full object-cover"
+              referrerPolicy="no-referrer" />
+          </div>
+          <h2 class="project-section-title mt-6 mb-0">Moodboard</h2>
+        </div>
+      </header>
+
+
+      <!-- Section 3: Le Processus -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">Le Processus</h2>
+        <div class="flex flex-col gap-12">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3_M1%202-COKc9s-l.jpg" alt="Process 1" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3_M2%202-DoQiR5uF.jpg" alt="Process 2" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3_M3%202-CyXqZxg2.jpg" alt="Process 3" referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3_M4%202-DKFgwyoV.jpg" alt="Process 4" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="project-side-text">
+            <p>
+              Plusieurs axes ont guidé le projet : rigueur géométrique, composition modulaire, inscription culturelle.
+              L’influence du Bauhaus s’impose comme principe : formes simples, répétition, lien direct entre forme et
+              fonction.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: La Maquette -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">La Maquette</h2>
+        <div class="flex flex-col gap-4">
+          <div class="project-image-container aspect-[4/3]">
+            <img src="/assets/P3_M5-jN70g65J.jpg" alt="Maquette Large" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3-pack-1%20-%20Grande-C7g6_dWE.jpeg" alt="Maquette 2" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3-pack-2-XhcLPuJn.jpg" alt="Maquette 3" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+            <div class="project-image-container aspect-square">
+              <img src="/assets/P3-pack-3%20-%20Grande-CKgr0Ivh.jpeg" alt="Maquette 4" class="project-image-full"
+                referrerPolicy="no-referrer" />
+            </div>
+          </div>
+          <div class="mt-8 border-t border-black/10 pt-8">
+            <p class="text-base text-black/70 leading-relaxed font-sans max-w-4xl">
+              Würfel est une collection de chocolats cubiques pensée comme un système. Chaque cube, de taille identique,
+              présente un graphisme distinct. Assemblés, ils forment une composition évolutive inspirée du Bauhaus. Le
+              packaging, réduit à deux éléments en carton recyclé et recyclable, prolonge cette logique.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nouvelle section : Très grande image -->
+      <section class="project-section-wrapper reveal">
+        <div
+          class="w-[calc(100vw-4rem)] relative left-1/2 -ml-[calc(50vw-2rem)] aspect-[7/5] md:aspect-[16/9] bg-gray-100 overflow-hidden">
+          <img src="/assets/P3-choco-tomb-DO_nY8d8.jpg" alt="Très grande image" class="w-full h-full object-cover"
+            referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Section 5: Détails -->
+      <section class="project-section-wrapper reveal">
+        <h2 class="project-section-title">Packaging</h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
+          <div class="project-image-container aspect-square">
+            <img src="/assets/P3-pack-4-fXvs7lKp.jpg" alt="Detail 1" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="/assets/IMG_2978%20copie%203-DUUzK7WM.jpg" alt="Detail 2" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="/assets/P3-pack-5%20-%20Grande-Cpj-_MEr.jpeg" alt="Detail 3" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+          <div class="project-image-container aspect-square">
+            <img src="/assets/IMG_2974%20copie-CTZeug3f.jpg" alt="Detail 4" class="project-image-full"
+              referrerPolicy="no-referrer" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Annexes / Affiche -->
+      <section class="project-section-wrapper reveal">
+
+        <div class="mt-20 border-t border-black/5 pt-20">
+          <img src="/assets/P3-affiche%20-C5LT-q7w.jpeg" alt="Affiche Würfel" class="w-full h-auto"
+            referrerPolicy="no-referrer" />
+        </div>
+      </section>
+
+      <!-- Navigation Projets -->
+      <section class="project-navigation-section">
+        <div class="project-section-wrapper mb-12">
+          <h2 class="text-4xl font-serif mb-8">Plus de projets</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Projet Précédent -->
+          <a href="/projet-P2.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <!-- Image principale -->
+            <img src="/assets/P2-DEdgenbG.png" alt="Aora - Image principale"
+              class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <!-- Image au survol -->
+            <img src="/assets/P2-PS-LJ82IF1z.png" alt="Aora - Vue produit"
+              class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                  </svg>
+                  Projet précédent
+                </span>
+                <h4 class="text-3xl font-serif italic">Aora</h4>
+              </div>
+            </div>
+          </a>
+
+          <!-- Projet Suivant -->
+          <a href="/projet-P4.html" class="group block relative overflow-hidden aspect-[16/9] bg-gray-100">
+            <!-- Image principale -->
+            <img src="/assets/P4-Cuuuby4H.png" alt="Bikepack - Image principale"
+              class="absolute inset-0 w-full h-full object-cover transition-all duration-700 ease-in-out group-hover:opacity-0 group-hover:scale-105"
+              referrerPolicy="no-referrer" />
+            <!-- Image au survol -->
+            <img src="/assets/P4-F3-DJxPNpah.jpg" alt="Bikepack - Vue produit"
+              class="absolute inset-0 w-full h-full object-cover opacity-0 scale-105 transition-all duration-700 ease-in-out group-hover:opacity-100 group-hover:scale-100"
+              referrerPolicy="no-referrer" />
+            <div
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+              <div
+                class="text-center text-white flex flex-col items-center gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                <span class="text-[10px] uppercase tracking-widest opacity-80 flex items-center gap-2">
+                  Projet suivant
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <h4 class="text-3xl font-serif italic">Bikepack</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="footer-container">
+    <div class="footer-grid">
+      <div class="space-y-4">
+        <div class="footer-brand"><span class="font-bold">Portfolio</span> Violette Sanchez</div>
+        <p class="footer-text">Créons ensemble des projets qui ont du sens.</p>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Contact</h4>
+        <div class="flex flex-col gap-2">
+          <a href="mailto:violettes@nchez.fr" class="footer-link">violettes@nchez.fr</a>
+          <a href="tel:+33782542843" class="footer-link">+33 7 82 54 28 43</a>
+          <p class="footer-text">Nantes, France</p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="footer-heading">Suivre</h4>
+        <div class="flex gap-8">
+          <a href="https://www.linkedin.com/in/violette-sanchez-25429633b/" target="_blank" rel="noopener noreferrer"
+            class="footer-link">LinkedIn</a>
+          <a href="https://www.behance.net/violettesanchez2" target="_blank" rel="noopener noreferrer"
+            class="footer-link">Behance</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Portfolio Violette — Tous droits réservés
+    </div>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m18 15-6-6-6 6" />
+    </svg>
+  </button>
+
+</body>
+
+</html>
