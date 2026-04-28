@@ -365,7 +365,7 @@
 
   /* Project Detail Pages */
   .project-section-wrapper {
-    @apply max-w-[1400px] mx-auto px-12 mb-20;
+    @apply max-w-[1400px] mx-auto px-0 md:px-12 mb-16 md:mb-20;
   }
 
   .project-navigation-section {
