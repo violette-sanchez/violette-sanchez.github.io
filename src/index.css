@@ -252,8 +252,18 @@
     @apply text-6xl md:text-8xl font-serif font-medium leading-[0.9] tracking-tight mb-8;
   }
 
-  .hero-description {
-    @apply text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-serif font-medium;
+  .hero-cartel-wrapper {
+    @apply relative inline-block mt-4 z-10;
+  }
+
+  .hero-cartel-bg {
+    @apply absolute inset-0 bg-[#FBFBF9] opacity-65 -z-10;
+    clip-path: polygon(1% 0%, 100% 0%, 97% 75%, 70% 100%, 0% 85%);
+  }
+
+  .hero-cartel-text {
+    @apply text-xl md:text-2xl text-[#1A1A1A] leading-relaxed max-w-2xl font-serif font-medium;
+    padding: 1rem 2.5rem 2.5rem 2rem;
   }
 
   .hero-name-highlight {
@@ -476,4 +486,16 @@
 
 #back-to-top.visible {
   @apply opacity-100 translate-y-0 pointer-events-auto;
+}
+
+/* --- Mobile Overrides pour les images des projets --- */
+@media (max-width: 767px) {
+  img[alt$="- Image principale"] {
+    opacity: 0 !important;
+  }
+  
+  img[alt$="- Vue produit"] {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
 }
